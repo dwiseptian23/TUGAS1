@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:text="DW.STORE"
+        android:background="#FFEB3B"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="#FFEB3B"
+        android:text="//SILAHKAN DAN SELAMAT BERBELANJA//"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TERSEDIA :"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/radioGroupproduk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kaos" />
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Harga : 75.000" />
+            <EditText
+                android:id="@+id/jmlhbrg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Jumlah"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/radioGroupproduk2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jaket" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga : 180.000" />
+            <EditText
+                android:id="@+id/jmlhbrg2"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/radioGroupproduk3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Hoodie" />
+            <TextView
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:text="harga : 169.000" />
+            <EditText
+                android:id="@+id/jmlhbrg3"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah"
+                android:inputType="number" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADA KARTU MEMBER ?"
+            android:layout_marginTop="7dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupMembership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/MemberYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member"/>
+            <RadioButton
+                android:id="@+id/MemberNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Member"/>
+        </RadioGroup>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="HITUNG"/>
+
+    <TextView
+        android:id="@+id/tagihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="TAGIHAN"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+</LinearLayout>
